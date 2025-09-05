@@ -70,8 +70,10 @@
     <Compile Include="Assets\Scripts\Interaction_System\InteractionPromptUi.cs" />
     <Compile Include="Assets\Scripts\Character_System\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Interaction_System\Inventory.cs" />
+    <Compile Include="Assets\Scripts\Dialouge System\DialogueManager.cs" />
     <Compile Include="Assets\Scripts\Interaction_System\IInteractable.cs" />
     <Compile Include="Assets\Scripts\Character_System\Player_Controller.cs" />
+    <Compile Include="Assets\Scripts\Dialouge System\DialogueTrigger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
