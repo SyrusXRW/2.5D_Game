@@ -16,6 +16,7 @@ public class DialogueManager : MonoBehaviour
     public bool isDialogueActive = false;
     public float typingspeed = 0.1f;
     public Animator animator;
+    public Animator Expression;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +38,8 @@ public class DialogueManager : MonoBehaviour
         isDialogueActive = true;
 
         animator.Play("show");
+
+        animator.Play("expression");
 
         foreach (DialogueLine dialogueLine in dialogue.dialogueLines)
         {
@@ -76,5 +79,6 @@ public class DialogueManager : MonoBehaviour
     {
         isDialogueActive = false;
         animator.Play("hide");
+        animator.Play("off");
     }
 }
