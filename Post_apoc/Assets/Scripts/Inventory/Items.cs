@@ -4,8 +4,8 @@ using UnityEngine;
 public class Item : ScriptableObject
 {
     public string itemname = "New Item";
-
     public string description = "Description";
-    public Sprite icon = null; 
+    public Sprite icon = null;
+    public bool DockingPass = true;
     
 }

@@ -33,7 +33,9 @@ public class DialogueTrigger : MonoBehaviour, IInteractable
 
     public Dialogue dialogue;
 
-    
+    public Dialogue Fork2;
+
+
 
     public void TriggerDialogue()
     {

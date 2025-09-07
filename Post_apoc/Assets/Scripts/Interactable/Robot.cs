@@ -1,8 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class Chest : MonoBehaviour, IInteractable
+public class Robot : MonoBehaviour, IInteractable
 {
      [SerializeField] private string _prompt;
 
@@ -25,3 +24,4 @@ public class Chest : MonoBehaviour, IInteractable
           Destroy(gameObject);
      }
 }
+

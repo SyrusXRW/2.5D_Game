@@ -7,28 +7,20 @@ public class Boat : MonoBehaviour, IInteractable
 {
     [SerializeField] private string _prompt;
 
-  public Item item;
+  public PlayerController playerController;
   public string InteractionPrompt => _prompt;
+
+  public Item item;
 
   public bool Interact(Interactor interactor)
   {
-    var Inventory = interactor.GetComponent<Inventory>();
-
-    if (Inventory == null) return false;
-
-    foreach (Item item in Inventory.items(item))
-    {
-      if (items.add == items.Scrap)
+    foreach (Item item in interactor.GetComponent<PlayerController>().inventory)
+      if (item.DockingPass == true)
       {
         SceneManager.LoadScene("BoatTest");
         Debug.Log(message: "Docking Boat!");
         return true;
       }
-      else
-      {
-        Debug.Log("NoObject");
-        return true;
-      }
-    }
+    return false;
   }
 }

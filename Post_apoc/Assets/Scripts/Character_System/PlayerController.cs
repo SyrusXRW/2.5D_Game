@@ -13,14 +13,22 @@ public class PlayerController : MonoBehaviour
     public Transform groundPoint;
     private bool isGrounded;
     public SpriteRenderer theSr;
-
+    public List<Item> inventory = new List<Item>();
+    public void Add(Item item)
+    {
+        Debug.Log("ADDED");
+        inventory.Add(item);
+    }
+    public void Remove(Item item)
+    {
+        inventory.Remove(item);
+    }
     private bool movingBackwards;
     // Start is called before the first frame update
     void Start()
     {
         
     }
-
     // Update is called once per frame
     void Update()
     {

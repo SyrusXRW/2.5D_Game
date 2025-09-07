@@ -68,8 +68,10 @@
     <Compile Include="Assets\Scripts\Interactable\Base_Script.cs" />
     <Compile Include="Assets\Wire.cs" />
     <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />
+    <Compile Include="Assets\Scripts\Interactable\Robot.cs" />
     <Compile Include="Assets\Scripts\Interaction_System\InteractionPromptUi.cs" />
     <Compile Include="Assets\Scripts\Menus\Main.cs" />
+    <Compile Include="Assets\Scripts\Character_System\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Character_System\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Menus\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\Inventory\Items.cs" />
@@ -77,7 +79,6 @@
     <Compile Include="Assets\Scripts\Interactable\Chest.cs" />
     <Compile Include="Assets\Scripts\Dialouge System\DialogueManager.cs" />
     <Compile Include="Assets\Scripts\Interaction_System\IInteractable.cs" />
-    <Compile Include="Assets\Scripts\Character_System\Player_Controller.cs" />
     <Compile Include="Assets\Scripts\Dialouge System\DialogueTrigger.cs" />
   </ItemGroup>
   <ItemGroup>
