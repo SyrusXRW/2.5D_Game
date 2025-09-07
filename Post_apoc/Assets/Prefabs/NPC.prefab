@@ -26,8 +26,8 @@ Transform:
   m_GameObject: {fileID: 1039463656723743020}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0009999275, y: -0.056999996, z: -0.011000156}
-  m_LocalScale: {x: 0.23708, y: 0.33998, z: 1}
+  m_LocalPosition: {x: 0.0009999275, y: 0.06, z: -0.01100016}
+  m_LocalScale: {x: 0.23708, y: 0.50385034, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5324710298239585770}
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  m_Sprite: {fileID: -1372737053, guid: a666f4489974c3d4a8f4d156ead63a64, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5324710298239585770}
   - component: {fileID: 1536044826096006404}
-  - component: {fileID: 7664146632793162877}
+  - component: {fileID: 4086999672484958143}
   m_Layer: 7
   m_Name: NPC
   m_TagString: Untagged
@@ -141,7 +141,7 @@ CapsuleCollider:
   m_Height: 0.316206
   m_Direction: 1
   m_Center: {x: 0, y: 0.0046174675, z: 0}
---- !u!114 &7664146632793162877
+--- !u!114 &4086999672484958143
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -150,19 +150,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7570503432415315585}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7163aed4568b40b4bb55faae018774ce, type: 3}
+  m_Script: {fileID: 11500000, guid: 209e61ffe8132764980f3db7674739c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _prompt: Talk to Kid
-  dialogue:
-    dialogueLines:
-    - character:
-        name: Kid
-        icon: {fileID: -879133735, guid: a666f4489974c3d4a8f4d156ead63a64, type: 3}
-        charanim: {fileID: 0}
-      line: You wanna head off the Island
-    - character:
-        name: Kid
-        icon: {fileID: -879133735, guid: a666f4489974c3d4a8f4d156ead63a64, type: 3}
-        charanim: {fileID: 0}
-      line: You can hop on the boat
+  dialogueSO: {fileID: 0}
