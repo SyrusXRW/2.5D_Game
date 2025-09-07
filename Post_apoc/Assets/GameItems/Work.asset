@@ -15,3 +15,4 @@ MonoBehaviour:
   itemname: Work
   description: Description
   icon: {fileID: 0}
+  DockingPass: 0
