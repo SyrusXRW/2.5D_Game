@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Testing_floor.unity
     guid: a08a7d244adbd614783b0ee35d6b54ac
+  - enabled: 1
+    path: Assets/Scenes/BoatTest.unity
+    guid: 62884337d979c38478ac58cd63d2ef4b
   m_configObjects: {}

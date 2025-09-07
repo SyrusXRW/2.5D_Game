@@ -159,4 +159,10 @@ MonoBehaviour:
     - character:
         name: Kid
         icon: {fileID: -879133735, guid: a666f4489974c3d4a8f4d156ead63a64, type: 3}
-      line: 'You wanna head off the island '
+        charanim: {fileID: 0}
+      line: You wanna head off the Island
+    - character:
+        name: Kid
+        icon: {fileID: -879133735, guid: a666f4489974c3d4a8f4d156ead63a64, type: 3}
+        charanim: {fileID: 0}
+      line: You can hop on the boat
