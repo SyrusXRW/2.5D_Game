@@ -18,7 +18,7 @@ public class NPC_Interact : MonoBehaviour
 
     private void Update()
     {
-        if (Keyboard.current.eKey.wasPressedThisFrame)
+        if (Keyboard.current.spaceKey.wasPressedThisFrame)
         {
             Debug.Log("DialogueCollecting");
             if (DialogueManager.Instance.isDialogueActive)
