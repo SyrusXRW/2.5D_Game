@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3eaeee70755dba2479925ced5b8f96e5, type: 3}
-  m_Name: ActorSo
+  m_Script: {fileID: 11500000, guid: 7d5065cba149ccf469e249b9d8924431, type: 3}
+  m_Name: Greet
   m_EditorClassIdentifier: 
-  actorName: Kid
-  portrait: {fileID: 0}
+  lines:
+  - speaker: {fileID: 11400000, guid: 5d44b77e3a7da62448c45f9ed9b8435b, type: 2}
+    text: Alright lets go head on over to the boat
+  options: []

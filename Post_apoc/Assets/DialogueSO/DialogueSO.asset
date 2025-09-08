@@ -14,4 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - speaker: {fileID: 11400000, guid: 5d44b77e3a7da62448c45f9ed9b8435b, type: 2}
-    text: Test
+    text: Are you ready to go?
+  options:
+  - optionText: Yes
+    nextDialogue: {fileID: 11400000, guid: e7da453bf5e93c9459a19e0c44e61f63, type: 2}
+  - optionText: No
+    nextDialogue: {fileID: 11400000, guid: adaa2d3f864f3bf48a8d0affb47f0985, type: 2}
