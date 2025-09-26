@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a666f4489974c3d4a8f4d156ead63a64
+guid: 93a49d59a3d8aa34396dc2bb86050ec5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 600
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,127 +97,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Temp_Sprite_0
+      name: Deni Walk Cycle_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 82
-        width: 32
-        height: 61
+        x: 32
+        y: 1092
+        width: 609
+        height: 1002
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b5791fd43f20c64ebd60e07646b2469
-      internalID: -1372737053
+      spriteID: 8a26325fe1d345046b5d504d56a1f7cf
+      internalID: -1047459219
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Temp_Sprite_1
+      name: Deni Walk Cycle_1
       rect:
         serializedVersion: 2
-        x: 83
-        y: 82
-        width: 32
-        height: 61
+        x: 696
+        y: 1111
+        width: 409
+        height: 959
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 875e5f030b56b8f459de2fc18136ae77
-      internalID: -2093210399
+      spriteID: 818fd98ccb391c54d980ab812aebbb93
+      internalID: 1521016631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Temp_Sprite_2
+      name: Deni Walk Cycle_2
       rect:
         serializedVersion: 2
-        x: 173
-        y: 82
-        width: 32
-        height: 59
+        x: 1312
+        y: 1096
+        width: 290
+        height: 973
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 288b905ee0f9de64aa519d4c40250860
-      internalID: -1271324846
+      spriteID: 97e7f2607d448f1418a0c441bb6df0d6
+      internalID: -1474935308
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Temp_Sprite_3
+      name: Deni Walk Cycle_3
       rect:
         serializedVersion: 2
-        x: 257
-        y: 80
-        width: 34
-        height: 61
+        x: 1772
+        y: 1097
+        width: 470
+        height: 944
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06a532c5760f9ea41adcef16098c1821
-      internalID: -690440926
+      spriteID: 46c64bc4e6eed714cbf02b57912b5a05
+      internalID: -1870866641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Temp_Sprite_4
+      name: Deni Walk Cycle_4
       rect:
         serializedVersion: 2
-        x: 88
-        y: 6
-        width: 35
-        height: 61
+        x: 69
+        y: 12
+        width: 577
+        height: 943
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 071188968e48a974e8fadc60dc0c7852
-      internalID: -1131406669
+      spriteID: ef173a5de940f644d8b279e379e1296f
+      internalID: -522124154
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Temp_Sprite_5
+      name: Deni Walk Cycle_5
       rect:
         serializedVersion: 2
-        x: 171
-        y: 8
-        width: 38
-        height: 59
+        x: 745
+        y: 12
+        width: 456
+        height: 944
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76256af451423354185568e92369708e
-      internalID: -879133735
+      spriteID: d2042778dc789534aac21fe64fe391c3
+      internalID: -1507282958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deni Walk Cycle_6
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 12
+        width: 252
+        height: 960
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fada377c1a3a1af43b3b1aa288debe8a
+      internalID: 1280735069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deni Walk Cycle_7
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 12
+        width: 454
+        height: 941
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8772a5bd423c45b4d8fd3059072ccedc
+      internalID: -449495427
       vertices: []
       indices: 
       edges: []
@@ -225,7 +267,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 02513a25a771e5f4aa118bc03458971e
+    spriteID: d521a01a7ceffd143bdaa3c3959d0cca
     internalID: 0
     vertices: []
     indices: 
@@ -233,12 +275,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Temp_Sprite_0: -1372737053
-      Temp_Sprite_1: -2093210399
-      Temp_Sprite_2: -1271324846
-      Temp_Sprite_3: -690440926
-      Temp_Sprite_4: -1131406669
-      Temp_Sprite_5: -879133735
+      Deni Walk Cycle_0: -1047459219
+      Deni Walk Cycle_1: 1521016631
+      Deni Walk Cycle_2: -1474935308
+      Deni Walk Cycle_3: -1870866641
+      Deni Walk Cycle_4: -522124154
+      Deni Walk Cycle_5: -1507282958
+      Deni Walk Cycle_6: 1280735069
+      Deni Walk Cycle_7: -449495427
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
