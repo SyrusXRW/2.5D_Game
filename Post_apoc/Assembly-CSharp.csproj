@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Interaction_System\Interactor.cs" />
     <Compile Include="Assets\Scripts\Interactable\Base_Script.cs" />
     <Compile Include="Assets\Scripts\Dialouge System\NPC\NPC_Idle.cs" />
+    <Compile Include="Assets\Scripts\Dialouge System\DialogueHistoryTracker.cs" />
     <Compile Include="Assets\Scripts\Dialouge System\DialogueManger.cs" />
     <Compile Include="Assets\Wire.cs" />
     <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />

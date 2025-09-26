@@ -1,11 +1,13 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections.Generic;
 
 public class NPC_Interact : MonoBehaviour
 {
     private Rigidbody rb;
-    public DialogueSO dialogueSO;
 
+    public List<DialogueSO> conversations;
+    public DialogueSO currentConversation;
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -18,14 +20,30 @@ public class NPC_Interact : MonoBehaviour
 
     private void Update()
     {
-        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        if (Keyboard.current.eKey.wasPressedThisFrame)
         {
             Debug.Log("DialogueCollecting");
             if (DialogueManager.Instance.isDialogueActive)
                 DialogueManager.Instance.AdvanceDialogue();
             else
+            {
                 Debug.Log("DialogueStarting");
-                DialogueManager.Instance.StartDialogue(dialogueSO);
+                CheckForNewConversation();
+                DialogueManager.Instance.StartDialogue(currentConversation);
+            }
+        }
+    }
+
+    private void CheckForNewConversation()
+    {
+        for (int i = 0; i < conversations.Count; i++)
+        {
+            var convo = conversations[i];
+            if (convo != null && convo.IsConditionMet())
+            {
+                conversations.RemoveAt(i);
+                currentConversation = convo;
+            }
         }
     }
 }

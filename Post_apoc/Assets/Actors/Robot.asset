@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3eaeee70755dba2479925ced5b8f96e5, type: 3}
-  m_Name: ActorSo
+  m_Name: Robot
   m_EditorClassIdentifier: 
-  actorName: Kid
-  portrait: {fileID: -710082433, guid: 37e14fa370e50d14d9e43e87ff6b86fc, type: 3}
+  actorName: Robot
+  portrait: {fileID: -1372737053, guid: a666f4489974c3d4a8f4d156ead63a64, type: 3}

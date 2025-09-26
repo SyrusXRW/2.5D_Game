@@ -3,8 +3,28 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "DialogueSO", menuName = "Dialogue/DialogueNode")]
 public class DialogueSO : ScriptableObject
 {
-    public DialogueLine[] lines; 
+    public DialogueLine[] lines;
     public DialogueOption[] options;
+
+    [Header("Conditional Requirments (Optional)")]
+    public ActorSO[] requiedNPC;
+    //items
+    //Locations
+
+    public bool IsConditionMet()
+    {
+        if (requiedNPC.Length > 0)
+        {
+            foreach (var npc in requiedNPC)
+            {
+                if (!DialogueHistoryTracker.Instance.HasSpokenWith(npc))
+                    return false;
+            }
+        }
+        //check for items 
+        //check for Locations 
+        return true;
+    }
 }
 
 [System.Serializable]
