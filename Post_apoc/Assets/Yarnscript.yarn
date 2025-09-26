@@ -1,6 +1,15 @@
+<<<<<<< Updated upstream
 ﻿title: Start
 tags:
 ---
+=======
+﻿
+
+title: Start
+tags:
+---
+<<declare $Kid = false>>
+>>>>>>> Stashed changes
 //<b>Prologue</b>, (To continue press Space or left click on the keyboard, or A on the Gamepad)
 // adds actor named "Eve" using sprite "cool-girl", placed in left-half + center of screen, with green text label
 //<<Act Marco Marco_Think left center green>>
@@ -9,5 +18,23 @@ tags:
 //<<Hide Marco>>
 <<Act Kid Post_Apoc_Kid_0 left center green>>
 Kid: Working?
+<<<<<<< Updated upstream
 <<Hide  Kid>>
 ===
+=======
+<<set $Kid = true>>
+<<Hide  Kid>>
+===
+
+title: Botanist
+---
+<<Act Botanist Post_Apoc_Botanist_0 left center blue>>
+<<if $Kid == true>>
+Botanist: Oh Hey, Saw you talked to Kid! 
+<<elseif $Kid == false>>
+Botanist: Hey, Have you talked to kid?
+<<endif>>
+Botanist: See ya!
+<<Hide Botanist>>
+===
+>>>>>>> Stashed changes
