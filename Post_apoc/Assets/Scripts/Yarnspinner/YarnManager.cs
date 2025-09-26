@@ -37,14 +37,8 @@ namespace Yarn.Unity.Example {
 		public Image genericSprite; // local prefab, used for instantiating sprites
 		public AudioSource genericAudioSource; // local prefab, used for instantiating sounds
 
-<<<<<<< Updated upstream
 		// big lists to keep track of all instantiated objects
 		List<AudioSource> sounds = new List<AudioSource>(); // big list of all instantiated sounds
-=======
-        private PlayerController playerController;
-		// big lists to keep track of all instantiated objects
-        List<AudioSource> sounds = new List<AudioSource>(); // big list of all instantiated sounds
->>>>>>> Stashed changes
 		List<Image> sprites = new List<Image>(); // big list of all instantianted sprites
 
 		// store sprite references for "actors" (characters, etc.)
@@ -76,7 +70,6 @@ namespace Yarn.Unity.Example {
 			runner.AddCommandHandler<float>("FadeIn", SetFadeIn );
 			runner.AddCommandHandler<string,string,float>("CamOffset", SetCameraOffset );
 
-<<<<<<< Updated upstream
 			// adds all Resources to internal lists / one big pile... it
 			// will scan inside all subfolders too! note: but when
 			// referencing sprites in the Yarn script, just use the file
@@ -87,20 +80,6 @@ namespace Yarn.Unity.Example {
 				var allAudioInResources = Resources.LoadAll<AudioClip>("");
 				loadAudio.AddRange( allAudioInResources );
 			}
-=======
-
-			// adds all Resources to internal lists / one big pile... it
-            // will scan inside all subfolders too! note: but when
-            // referencing sprites in the Yarn script, just use the file
-            // name and omit folder names
-            if (useResourcesFolders)
-            {
-                var allSpritesInResources = Resources.LoadAll<Sprite>("");
-                loadSprites.AddRange(allSpritesInResources);
-                var allAudioInResources = Resources.LoadAll<AudioClip>("");
-                loadAudio.AddRange(allAudioInResources);
-            }
->>>>>>> Stashed changes
 		}
 
 		#region YarnCommands
@@ -111,7 +90,6 @@ namespace Yarn.Unity.Example {
 		}
 
 		/// <summary>
-<<<<<<< Updated upstream
 		/// SetActor(actorName,spriteName,positionX,positionY,color) main
 		/// function for moving / adjusting characters</summary>
 		public void SetActor(string actorName, string spriteName, string positionX = "", string positionY = "", string colorHex = "" ) {
@@ -152,55 +130,6 @@ namespace Yarn.Unity.Example {
 			// save actor data
 			actors.Add( actorName, new VNActor( newActor, actorColor) );
 		}
-=======
-        /// SetActor(actorName,spriteName,positionX,positionY,color) main
-        /// function for moving / adjusting characters</summary>
-        public void SetActor(string actorName, string spriteName, string positionX = "", string positionY = "", string colorHex = "")
-        {
-
-            // have to use SetSprite() because par[2] and par[3] might be
-            // keywords (e.g. "left", "right")
-            var newActor = SetSpriteUnity(spriteName, positionX, positionY);
-
-            // define text label BG color
-            var actorColor = Color.black;
-            if (colorHex != string.Empty && ColorUtility.TryParseHtmlString(colorHex, out actorColor) == false)
-            {
-                Debug.LogErrorFormat(this, "VN Manager can't parse [{0}] as an HTML color (e.g. [#FFFFFF] or certain keywords like [white])", colorHex);
-            }
-
-            // if the actor is using a sprite already, then clone any
-            // persisting data, and destroy it (just to be safe)
-            if (actors.ContainsKey(actorName))
-            {
-                // if any missing position params, assume the actor
-                // position should stay the same
-                var newPos = newActor.rectTransform.anchoredPosition;
-                if (positionX == string.Empty && positionY == string.Empty)
-                { // missing 2 params, override both x and y
-                    newPos = actors[actorName].rectTransform.anchoredPosition;
-                }
-                else if (positionY == string.Empty)
-                { // missing 1 param, override y
-                    newPos.y = actors[actorName].rectTransform.anchoredPosition.y;
-                }
-                // if any missing color params, then assume actor color
-                // should stay the same
-                if (colorHex == string.Empty)
-                {
-                    actorColor = actors[actorName].actorColor;
-                }
-                newActor.rectTransform.anchoredPosition = newPos;
-                // clean-up
-                Destroy(actors[actorName].gameObject);
-                actors.Remove(actorName);
-                actors.Remove(actorName);
-            }
-
-            // save actor data
-            actors.Add(actorName, new VNActor(newActor, actorColor));
-        }
->>>>>>> Stashed changes
 
 		///<summary> Draw(spriteName,positionX,positionY) generic function
 		///for sprite drawing</summary>

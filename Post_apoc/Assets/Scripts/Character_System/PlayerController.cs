@@ -10,25 +10,9 @@ namespace Yarn.Unity.Example
         public Rigidbody theRB;
         public float moveSpeed, jumpForce;
         
-<<<<<<< Updated upstream
         public float interactionRadius = 2.0f;
         private Vector2 moveInput;
 
-=======
-<<<<<<< Updated upstream
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        //if (DialogueManager.Instance.isDialogueActive)
-        //{
-=======
-        public float interactionRadius = 2.0f;
-        private Vector2 moveInput;
-
-        public Animator anim; 
-
->>>>>>> Stashed changes
         public LayerMask whatIsGround;
         public Transform groundPoint;
         private bool isGrounded;
@@ -57,10 +41,6 @@ namespace Yarn.Unity.Example
         {
             //if (DialogueManager.Instance.isDialogueActive)
             //{
-<<<<<<< Updated upstream
-=======
->>>>>>> Stashed changes
->>>>>>> Stashed changes
             //moveSpeed = 5f;
             //Debug.Log(message: "Pls");
             //return;
@@ -85,23 +65,11 @@ namespace Yarn.Unity.Example
             moveInput.x = Input.GetAxisRaw("Horizontal");
             moveInput.y = Input.GetAxisRaw("Vertical");
 
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-        RaycastHit hit;
-        if(Physics.Raycast(groundPoint.position, Vector3.down, out hit, .3f, whatIsGround))
-=======
->>>>>>> Stashed changes
             moveInput.Normalize();
 
             theRB.velocity = new Vector3(moveInput.x * moveSpeed, theRB.velocity.y, moveInput.y * moveSpeed);
             theRB.rotation = Quaternion.Euler(new Vector3(moveInput.x, theRB.velocity.y, theRB.velocity.z));
 
-<<<<<<< Updated upstream
-=======
-            anim.SetFloat("moveSpeed", theRB.velocity.magnitude);
-
->>>>>>> Stashed changes
             RaycastHit hit;
             if (Physics.Raycast(groundPoint.position, Vector3.down, out hit, .3f, whatIsGround))
             {
@@ -138,10 +106,6 @@ namespace Yarn.Unity.Example
 
         }
         public void CheckForNearbyNPC()
-<<<<<<< Updated upstream
-=======
->>>>>>> Stashed changes
->>>>>>> Stashed changes
         {
             var allParticipants = new List<NPC>(FindObjectsOfType<NPC>());
             var target = allParticipants.Find(delegate (NPC p)
