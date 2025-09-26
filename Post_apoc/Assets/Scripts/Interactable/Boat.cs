@@ -2,25 +2,30 @@
 // using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Yarn.Unity;
 
-public class Boat : MonoBehaviour, IInteractable
+namespace Yarn.Unity.Example
 {
+  public class Boat : MonoBehaviour, IInteractable
+  {
     [SerializeField] private string _prompt;
 
-  public PlayerController playerController;
-  public string InteractionPrompt => _prompt;
+    private InMemoryVariableStorage inMemoryVariableStorage;
+    public PlayerController playerController;
+    public string InteractionPrompt => _prompt;
 
-  public Item item;
+    public Item item;
 
-  public bool Interact(Interactor interactor)
-  {
-    foreach (Item item in interactor.GetComponent<PlayerController>().inventory)
-      if (item.DockingPass == true)
-      {
-        SceneManager.LoadScene("BoatTest");
-        Debug.Log(message: "Docking Boat!");
-        return true;
-      }
-    return false;
+    public bool Interact(Interactor interactor)
+    {
+      foreach (Item item in interactor.GetComponent<PlayerController>().inventory)
+        if (item.DockingPass == true)
+        {
+          SceneManager.LoadScene("BoatTest");
+          Debug.Log(message: "Docking Boat!");
+          return true;
+        }
+      return false;
+    }
   }
 }

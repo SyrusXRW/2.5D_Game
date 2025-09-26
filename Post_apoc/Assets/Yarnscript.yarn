@@ -1,0 +1,13 @@
+﻿title: Start
+tags:
+---
+//<b>Prologue</b>, (To continue press Space or left click on the keyboard, or A on the Gamepad)
+// adds actor named "Eve" using sprite "cool-girl", placed in left-half + center of screen, with green text label
+//<<Act Marco Marco_Think left center green>>
+//Marco: Which one should I sketch? #line:marco_talk_medium
+//Marco: Maybe... #line:marco_talk_short
+//<<Hide Marco>>
+<<Act Kid Post_Apoc_Kid_0 left center green>>
+Kid: Working?
+<<Hide  Kid>>
+===

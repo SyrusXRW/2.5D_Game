@@ -1,27 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Yarn.Unity; 
 
-public class Chest : MonoBehaviour, IInteractable
+namespace Yarn.Unity.Example
 {
-     [SerializeField] private string _prompt;
-
-     public Item item;
-
-     public PlayerController playercontroller;
-
-     public string InteractionPrompt => _prompt;
-
-     public bool Interact(Interactor interactor)
+     public class Chest : MonoBehaviour, IInteractable
      {
-          PickUp();
-          Debug.Log(message: "opening chest!");
-          return true;
-     }
-     void PickUp()
-     {
-          playercontroller.Add(item);
-          Debug.Log("Picking up" + item.name);
-          Destroy(gameObject);
+          [SerializeField] private string _prompt;
+
+          public Item item;
+
+          public PlayerController playercontroller;
+
+          public string InteractionPrompt => _prompt;
+
+          public bool Interact(Interactor interactor)
+          {
+               PickUp();
+               Debug.Log(message: "opening chest!");
+               return true;
+          }
+          void PickUp()
+          {
+               playercontroller.Add(item);
+               Debug.Log("Picking up" + item.name);
+               Destroy(gameObject);
+          }
      }
 }
