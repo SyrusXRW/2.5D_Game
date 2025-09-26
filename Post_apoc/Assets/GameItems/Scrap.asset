@@ -15,3 +15,4 @@ MonoBehaviour:
   itemname: Scrap
   description: Some Scrap collected in the levels
   icon: {fileID: 0}
+  DockingPass: 1
