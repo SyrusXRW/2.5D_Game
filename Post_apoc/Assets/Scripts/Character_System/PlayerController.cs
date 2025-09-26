@@ -13,6 +13,8 @@ namespace Yarn.Unity.Example
         public float interactionRadius = 2.0f;
         private Vector2 moveInput;
 
+        public Animator anim;
+
         public LayerMask whatIsGround;
         public Transform groundPoint;
         private bool isGrounded;
@@ -69,6 +71,8 @@ namespace Yarn.Unity.Example
 
             theRB.velocity = new Vector3(moveInput.x * moveSpeed, theRB.velocity.y, moveInput.y * moveSpeed);
             theRB.rotation = Quaternion.Euler(new Vector3(moveInput.x, theRB.velocity.y, theRB.velocity.z));
+
+            anim.SetFloat("moveSpeed", theRB.velocity.magnitude);
 
             RaycastHit hit;
             if (Physics.Raycast(groundPoint.position, Vector3.down, out hit, .3f, whatIsGround))
