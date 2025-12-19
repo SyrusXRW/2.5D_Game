@@ -3969,12 +3969,12 @@ PrefabInstance:
       objectReference: {fileID: 226017116}
     - target: {fileID: 1520703209953126501, guid: 3e0c04ca2ba285a4a83b3be4b2f2dfa5, type: 3}
       propertyPath: inventory.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1520703209953126501, guid: 3e0c04ca2ba285a4a83b3be4b2f2dfa5, type: 3}
       propertyPath: inventory.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 7b59800a502fd384993ed61616da86f9, type: 2}
+      objectReference: {fileID: 11400000, guid: ecb4ef872d29dfe4d96e356a58c74c3e, type: 2}
     - target: {fileID: 1720301349088473096, guid: 3e0c04ca2ba285a4a83b3be4b2f2dfa5, type: 3}
       propertyPath: m_Name
       value: Player

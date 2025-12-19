@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
+//Always include this stuff 
 namespace Yarn.Unity.Example
 {
     public class PlayerController : MonoBehaviour
